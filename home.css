@@ -41,7 +41,7 @@ h3 {
     display: flex;
     justify-content: center; /* Center the cards block within 'main' */
     gap: 30px; /* Increased gap to match wireframe spacing */
-    margin: 3rem 0; /* Keep existing margins */
+    margin: 2rem 0; /* Keep existing margins */
     flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
     /* No max-width here as 'main' already limits it, and cards should distribute within 'main' */
 }
@@ -81,6 +81,10 @@ h3 {
     transition: background-color 0.3s;
 }
 
+.button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
 .card button:hover {
     background-color: #6C584C; /* Umber */
 }
@@ -89,7 +93,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-bottom: 2rem; /* Space below the section */
+    margin-bottom: 1rem; /* Space below the section */
 }
 
 .how-it-works {
