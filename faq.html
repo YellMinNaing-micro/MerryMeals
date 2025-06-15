@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meals On Wheel</title>
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="faq.css"> <!-- Link to the new FAQ CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main>
+        <h1>Meals for Wheel - FAQ</h1>
+        <div class="faq-container">
+            <section class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-label">
+                    What is Meals for Wheel?
+                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="faq-answer" id="faq1" role="region" aria-labelledby="faq1-label" hidden>
+                    Meals for Wheel is a community initiative that provides nutritious meals to wheelchair users and
+                    people with limited mobility.
+                </div>
+            </section>
+            <section class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-label">
+                    How can I sign up to receive meals?
+                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="faq-answer" id="faq2" role="region" aria-labelledby="faq2-label" hidden>
+                    You can sign up by contacting our support team via the “Contact Us” page or by calling our hotline.
+                    Eligibility criteria apply.
+                </div>
+            </section>
+            <section class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-label">
+                    Are the meals customizable for dietary restrictions?
+                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="faq-answer" id="faq3" role="region" aria-labelledby="faq3-label" hidden>
+                    Yes, we offer meal options that cater to common dietary restrictions including vegetarian,
+                    gluten-free, and diabetic-friendly menus.
+                </div>
+            </section>
+            <section class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-label">
+                    Is there a cost to receive meals?
+                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="faq-answer" id="faq4" role="region" aria-labelledby="faq4-label" hidden>
+                    Meals for Wheel is a charitable program, so meals are provided free of charge to qualifying
+                    individuals.
+                </div>
+            </section>
+            <section class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq5" id="faq5-label">
+                    How often are meals delivered?
+                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="faq-answer" id="faq5" role="region" aria-labelledby="faq5-label" hidden>
+                    Meals can be delivered daily or weekly depending on your preference and availability in your area.
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        // Load navigation
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+
+        // Accordion toggle functionality
+        const faqButtons = document.querySelectorAll('.faq-question');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                faqButtons.forEach(btn => {
+                    btn.setAttribute('aria-expanded', 'false');
+                    const answer = document.getElementById(btn.getAttribute('aria-controls'));
+                    answer.hidden = true;
+                    answer.classList.remove('open');
+                });
+                if (!expanded) {
+                    button.setAttribute('aria-expanded', 'true');
+                    const answer = document.getElementById(button.getAttribute('aria-controls'));
+                    answer.hidden = false;
+                    // add class to trigger transition after unhidden, slight delay for transition
+                    setTimeout(() => {
+                        answer.classList.add('open');
+                    }, 10);
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
