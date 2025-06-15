@@ -1,0 +1,64 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #A98467; /* Chamoisse */
+    padding: 0 2rem;
+    box-shadow: 0 2px 5px rgba(108, 88, 76, 0.2);
+    height: 60px; /* Reduced height */
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 40px; /* Logo height */
+    width: auto;
+    margin-right: 30px; /* Space between logo and menu */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Space between menu items */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F0EAD2; /* Parchment */
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #DDE586; /* Tea green */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #DDE586;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
