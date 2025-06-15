@@ -1,0 +1,78 @@
+/* Main Content Styles - Keep these in your general body/main CSS or move here if specific */
+body {
+    background-color: #ecdfa8; /* Light background from your original CSS */
+    color: #6C584C; /* Umber from your original CSS */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Add flexbox to push content down if navbar/footer are fixed or to distribute space */
+    min-height: calc(100vh - /* Height of your navbar */ - /* Height of your footer */ 20px /* Some buffer */);
+    display: flex; /* Helps in centering content vertically if needed */
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the login form */
+    align-items: center; /* Horizontally centers the login form */
+    padding-bottom: 50px; /* Add some padding at the bottom for spacing before footer */
+}
+
+/* FAQ Styles */
+.faq-container {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 0.5px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 20px; /* Padding inside the card */
+    width: 100%; /* Full width of the main container */
+    max-width: 800px; /* Maximum width for the card */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc; /* Divider between FAQ items */
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 18px 12px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: 0.5px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    color: #6C584C; /* Umber color */
+    user-select: none;
+    transition: background-color 0.2s ease;
+    background: transparent; /* Transparent background for questions */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 12px;
+    font-size: 1rem;
+    color: #475569; /* Darker text color for answers */
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-answer.open {
+    padding: 12px;
+    max-height: 200px; /* Enough for typical answer text */
+}
+
+.material-icons {
+    font-size: 24px;
+    color: #64748b;
+    transition: transform 0.3s ease;
+  }
+  .faq-question[aria-expanded="true"] .material-icons {
+    transform: rotate(180deg);
+    color: #4338ca;
+  }
+
