@@ -13,8 +13,8 @@ main {
     display: flex; /* Use flexbox to center content */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    min-height: calc(70vh - (/* height of navbar + height of footer */)); /* Adjust to push content down if needed */
-    padding: 10px; /* Add some padding around the form */
+    min-height: calc(90vh - (/* height of navbar + height of footer */)); /* Adjust to push content down if needed */
+    padding: 0px; /* Add some padding around the form */
     box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
