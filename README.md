@@ -54,7 +54,7 @@ To explore the current frontend of the MerryMeal project:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/MerryMeal.git](https://github.com/YourUsername/MerryMeal.git)
+    git clone [https://github.com/YellMinNaing-micro/MerryMeals.git](https://YellMinNaing-micro/MerryMeals.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
