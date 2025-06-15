@@ -1,7 +1,7 @@
 /* Navigation Bar Styles */
 .navbar {
     background-color: #A98467; /* Chamoisse */
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     box-shadow: 0 2px 5px rgba(108, 88, 76, 0.2);
     height: 60px; /* Reduced height */
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 .logo {
