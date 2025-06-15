@@ -1,0 +1,91 @@
+/* Main Content Styles - Keep these in your general body/main CSS or move here if specific */
+/* Header Styles */
+header {
+    background-color: #A98467; /* Chamoisse */
+    padding: 0 0.5rem;
+    height: 40px; /* Reduced height */
+    box-shadow: 0 2px 5px rgba(108, 88, 76, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: #ecdfa8; /* Light background */
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.back-button i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+body {
+    background-color: #ecdfa8; /* Light background from your original CSS */
+    color: #6C584C; /* Umber from your original CSS */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard Styles */
+
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 2rem;
+    min-height: calc(100vh - 100px); /* Adjust as needed for navbar/footer */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color:transparent; /* Dark Umber */
+    color: #ecdfa8; /* Light background */
+    width: 250px; /* Fixed width for sidebar */
+}
+
+.sidebar h2 {
+    font-weight: bold;
+    color: #6C584C;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    font-weight: bold;
+    color: #6C584C;
+    text-decoration: none;
+}
+
+/* Content Styles */
+.content {
+    border-left: #6C584C solid 0.5px; /* Border for content area */
+    padding-left: 1rem;
+    background-color: transparent; /* White background for main content */
+}
+
+.data-section {
+    border-radius: 10px; /* Rounded corners for data sections */
+    margin: 20px 10px; /* Margin around data sections */
+    border: 1px solid #6C584C; /* Border for data sections */
+    padding: 20px;
+}
+
+h3 {
+    margin: 0;
+}
+
+
