@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meals On Wheel</title>
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main>
+        <section class="login-page-container">
+            <h2>Login To Your Account</h2>
+            <div class="login-form-box">
+                <h3>Login</h3>
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember_me"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <a href="registration.html" class="register-now">Register Now?</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        // Load navigation
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+
+</html>
