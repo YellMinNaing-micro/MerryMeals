@@ -2,24 +2,22 @@
 .site-footer {
     background-color: #6C584C; /* Umber */
     color: #F0EAD2; /* Parchment */
-    padding: 1rem 0;
+    padding: 0 1.5rem;
+    box-shadow: 0 2px 5px rgba(108, 88, 76, 0.2);
+    height: 60px; /* Reduced height */
+    display: flex;
+    align-items: center;
     font-size: 0.9rem;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 0;
 }
 
-.footer-logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #DDE586; /* Tea green */
-}
 
 .footer-links {
     display: flex;
