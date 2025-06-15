@@ -72,7 +72,7 @@ We welcome contributions from the community! If you're interested in helping us 
 
 ## Contact
 
-For any inquiries or collaborations, please reach out to [Your Contact Information or Project Email].
+For any inquiries or collaborations, please reach out to yellminnaing5@gmail.com.
 
 ---
 
