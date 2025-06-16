@@ -1,0 +1,210 @@
+/* Main Content Styles */
+body {
+    background-color: #ecdfa8;
+    color: #6C584C;
+    /* Umber */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 0;
+    padding: 20px;
+}
+
+/* Full-width donor container */
+.donor-container {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+/* Header styles */
+h2 {
+    text-align: start;
+    background-color: transparent;
+    color: 6C584C;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #6C584C;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Table container */
+.donor-table-container {
+    margin-bottom: 30px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Table styles */
+.donor-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.donor-table th,
+.donor-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid transparent;
+}
+
+.donor-table th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.donor-table tr:hover {
+    background-color: #d1a78d;
+}
+
+/* Full-width divider */
+.divider {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    width: 100%;
+    height: 1px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .donor-table th,
+    .donor-table td {
+        padding: 8px 10px;
+    }
+
+    .donor-container {
+        padding: 15px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.donate-form-container {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.donate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.donate-form label {
+    font-weight: bold;
+    display: block;
+    /* Make label take its own line */
+    color: #4A4A4A;
+    margin-bottom: -10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    box-sizing: border-box;
+    /* Include padding in element's total width and height */
+    background-color: transparent;
+    /* Make text box background transparent */
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.donate-btn {
+    background-color: #6C584C;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    /* Remove if you want fixed width */
+}
+
+.donate-btn:hover {
+    background-color: #5a4a3f;
+}
+
+.donates-btn {
+    background-color: #6C584C;
+    color: white;
+}
+
+.donates-btn:hover {
+    background-color: #5a4a3f;
+}
+
+.donor-list-btn {
+    background-color: #f0f0f0;
+    color: #6C584C;
+    border: 1px solid #ddd;
+}
+
+.donor-list-btn:hover {
+    background-color: #e0e0e0;
+}
