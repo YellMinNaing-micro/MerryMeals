@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meals On Wheel</title>
+    <!-- Include both component CSS files -->
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Your main styles -->
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+    <!-- Navigation Bar Container -->
+    <div id="navbar-container"></div>
+
+    <main>
+        <div class="donor-container">
+            <h1>Donor Page</h1>
+
+            <div class="donor-table-container">
+                <table class="donor-table">
+                    <thead>
+                        <tr>
+                            <th>List</th>
+                            <th>Donor Name</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Miles</td>
+                            <td>$500</td>
+                            <td>5/26/25</td>
+                            <td>12:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Zun</td>
+                            <td>$500</td>
+                            <td>5/26/25</td>
+                            <td>12:00 AM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="button-container">
+                <button class="button donate-btn">Donate Now</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="donate-section">
+            <h2>Donate Form</h2>
+
+            <div class="donate-form-container">
+                <form class="donate-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="Amount" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Payment Method</option>
+                            <option value="credit">Credit Card</option>
+                            <option value="debit">Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn donates-btn">Donate Now</button>
+                        <button type="button" class="btn donor-list-btn">Donor List</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript to load components -->
+    <script>
+        // Load navigation
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+
+</html>
