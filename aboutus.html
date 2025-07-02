@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meals On Wheel</title>
+    <!-- Include both component CSS files -->
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Your main styles -->
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+
+<body>
+    <!-- Navigation Bar Container -->
+    <div id="navbar-container"></div>
+
+    <main>
+        <h3>Welcome to MerryMeal!</h3>
+        <div class="hero-container">
+            <img src="photo1.jpg" alt="MerryMeals" class="hero-image">
+            <p class="intro">
+                We're delighted to have you here. MerryMeal is dedicated to preparing and delivering hot,
+                nutritional meals to seniors and adults in need. Our caring volunteers and partners work
+                together to ensure that no one goes hungry or feels alone.
+            </p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card-with-header">
+                <h3 class="card-header">Donate</h3>
+                <div class="card">
+                    <img src="photo1.jpg" alt="MerryMeals" class="image-placeholder">
+                    <button>Donate Now</button>
+                </div>
+            </div>
+
+            <div class="card-with-header">
+                <h3 class="card-header">Order</h3>
+                <div class="card">
+                    <img src="photo1.jpg" alt="MerryMeals" class="image-placeholder">
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-it-works-container">
+            <div class="card-with-header">
+                <h3 class="card-header">Register</h3>
+                <div class="card">
+                    <img src="register.png" alt="MerryMeals" class="image-placeholder">
+                    <button onclick="location.href='registration.html'">Register Now</button>
+                </div>
+            </div>
+
+            <p class="how-it-works">
+                How it works:
+                We're delighted to have you here. MerryMeal is dedicated to preparing and delivering hot,
+                nutritional meals to seniors and adults in need. Our caring volunteers and partners work
+                together to ensure that no one goes hungry or feels alone.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript to load components -->
+    <script>
+        // Load navigation
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
+</body>
+
+</html>
