@@ -1,0 +1,157 @@
+/* Main Content Styles */
+body {
+    background-color: #ecdfa8;
+    color: #6C584C;
+    /* Umber */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+h3 {
+    color: #A98467;
+    /* Chamoisse */
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #6C584C;
+    /* Umber */
+    max-width: 70%;
+    /* Prevents the text from taking too much space */
+}
+
+.hero-image {
+    height: 300px;
+    border-radius: 8px;
+    max-width: 45%;
+    /* Ensures the image doesn't take full width */
+    object-fit: cover;
+    /* Ensures the image maintains aspect ratio */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    /* Center the cards block within 'main' */
+    gap: 30px;
+    /* Increased gap to match wireframe spacing */
+    margin: 2rem 0;
+    /* Keep existing margins */
+    flex-wrap: wrap;
+    /* Allow cards to wrap on smaller screens */
+    /* No max-width here as 'main' already limits it, and cards should distribute within 'main' */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: 280px;
+    /* Set a max-width for individual cards for consistency */
+    background-color: transparent;
+    border: 1px solid #ccc;
+    /* Add a subtle border like the wireframe */
+    border-radius: 5px;
+    /* Slightly more rounded corners */
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* More distinct shadow */
+    text-align: center;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    display: flex;
+    /* Use flexbox for content within the card */
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center items horizontally within the card */
+    min-height: 350px;
+    /* Ensure cards have a minimum height for consistent appearance */
+    justify-content: space-between;
+    /* Distribute space within the card */
+}
+
+
+.card .image-placeholder {
+    height: 250px;
+    border-radius: 4px;
+    max-width: 100%;
+    /* Ensures the image doesn't take full width */
+    object-fit: cover;
+    /* Ensures the image maintains aspect ratio */
+}
+
+.card button {
+    background-color: #A98467;
+    /* Chamoisse */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
+.card button:hover {
+    background-color: #6C584C;
+    /* Umber */
+}
+
+.how-it-works-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    /* Space below the section */
+}
+
+.how-it-works {
+    display: flex;
+    font-size: 1.1rem;
+    color: #6C584C;
+    /* Umber */
+    margin-top: 5rem;
+    max-width: 70%;
+    /* Prevents the text from taking too much space */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.card-with-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-header {
+    color: #6C584C;
+    /* Umber color to match your theme */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
